@@ -20,34 +20,40 @@
     </header>
     <main>
         <div id="app">
-        {{message}}
+            <h1>Hello World!</h1>
+            {{message}}
         </div>
 
         <div class="app2">
+            <h1>コンソールからタグのtitleを変更</h1>
             <p v-bind:title="message">app2の文章でっせ</p>
         </div>
 
         <div id="app3">
+            <h1>条件分岐</h1>
             <p v-if="seen">falseにすると消えるよ</p>
         </div>
 
         <div id="app4">
+            <h1>forループでコンソールからリストの内容を追加</h1>
             <li v-for="todo in todos">{{ todo.text }}</li>
         </div>
 
         <div id="app5">
+            <h1>ボタンを押すと文章を反転させる</h1>
             <p>{{message}}</p>
             <button v-on:click="reverseMessage">文字の反転</button>
         </div>
 
         <div id="app6">
+            <h1>テキストボックスの内容がpタグの中身と連動</h1>
             <p>入力してね</p>
             <p>{{message}}</p>
             <input v-model="message">
         </div>
 
         <div id="change_sentence">
-            <p>ボタンをクリックして文を変える</p>
+            <h1>ボタンをクリックして文を変える</h1>
             <p>{{change_sentence}}</p>
             <input v-model="sentence">
             <button v-on:click="change">文を変更</button>

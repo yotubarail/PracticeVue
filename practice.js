@@ -44,6 +44,19 @@ var app5 = new Vue ({
 var app6 = new Vue ({
     el: "#app6",
     data: {
-        message: "入力してね"
+        message: ""
+    }
+})
+
+var change_sentence = new Vue ({
+    el: "#change_sentence",
+    data: {
+        change_sentence: "",
+        sentence: ""
+    },
+    methods : {
+        change: function() {
+            this.change_sentence = this.sentence
+        }
     }
 })

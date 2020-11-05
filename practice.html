@@ -41,8 +41,16 @@
         </div>
 
         <div id="app6">
+            <p>入力してね</p>
             <p>{{message}}</p>
             <input v-model="message">
+        </div>
+
+        <div id="change_sentence">
+            <p>ボタンをクリックして文を変える</p>
+            <p>{{change_sentence}}</p>
+            <input v-model="sentence">
+            <button v-on:click="change">文を変更</button>
         </div>
         <script src="practice.js"></script>
     </main>

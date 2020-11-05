@@ -12,7 +12,7 @@
     <meta property="og:image" content=""/>
     <meta name="twitter:card" content="summary"/>
     <title></title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="practice.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
   <body>
@@ -29,6 +29,28 @@
 
         <div id="app3">
             <p v-if="seen">falseにすると消えるよ</p>
+        </div>
+
+        <div id="app4">
+            <li v-for="todo in todos">{{ todo.text }}</li>
+        </div>
+
+        <div id="app5">
+            <p>{{message}}</p>
+            <button v-on:click="reverseMessage">文字の反転</button>
+        </div>
+
+        <div id="app6">
+            <p>入力してね</p>
+            <p>{{message}}</p>
+            <input v-model="message">
+        </div>
+
+        <div id="change_sentence">
+            <p>ボタンをクリックして文を変える</p>
+            <p>{{change_sentence}}</p>
+            <input v-model="sentence">
+            <button v-on:click="change">文を変更</button>
         </div>
         <script src="practice.js"></script>
     </main>

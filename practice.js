@@ -18,3 +18,45 @@ var app3 = new Vue ({
         seen: true
     }
 })
+
+var app4 = new Vue ({
+    el: "#app4",
+    data: {
+        todos: [
+            {text: "Ok"},
+            {text: "No"}
+        ]
+    }
+})
+
+var app5 = new Vue ({
+    el: "#app5",
+    data: {
+        message: "こんにちは"
+    },
+    methods: {
+        reverseMessage: function() {
+            this.message = this.message.split('').reverse().join("")
+        }
+    }
+})
+
+var app6 = new Vue ({
+    el: "#app6",
+    data: {
+        message: ""
+    }
+})
+
+var change_sentence = new Vue ({
+    el: "#change_sentence",
+    data: {
+        change_sentence: "",
+        sentence: ""
+    },
+    methods : {
+        change: function() {
+            this.change_sentence = this.sentence
+        }
+    }
+})

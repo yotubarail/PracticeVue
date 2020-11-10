@@ -1,3 +1,15 @@
-.app2, #app4, #app6 {
+@charset "UTF-8";
+
+html {
+  font-size: 16px;
+  font-kerning: normal;
+  scroll-behavior:smooth;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.app2, #app4, #app6, #vue_style {
     background: rgb(255, 189, 150, 0.4);
 }

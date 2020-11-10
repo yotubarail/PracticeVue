@@ -60,3 +60,13 @@ var change_sentence = new Vue ({
         }
     }
 })
+
+var vue_style = new Vue ({
+    el: "#vue_style",
+    data: {
+        style: {
+            color: "red",
+            fontSize: "20px"
+        }
+    }
+})

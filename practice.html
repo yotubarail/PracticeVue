@@ -63,6 +63,33 @@
             <h1>Vue.jsでSyleを指定</h1>
             <p v-bind:style="style">こんにちは、世界</p>
         </div>
+
+        <div id=selectbox>
+            <h1>セレクトボックス</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>選択</th>
+                        <th>結果</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <select v-model="select">
+                                <option value="Vue.js">Vue.js</option>
+                                <option value="JavaScript">JavaScript</option>
+                                <option value="HTML">HTML</option>
+                            </select>
+                        </td>
+                        <td>
+                            <p>{{ select }}</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script src="practice.js"></script>
     </main>

@@ -70,3 +70,10 @@ var vue_style = new Vue ({
         }
     }
 })
+
+var selectbox = new Vue ({
+    el: "#selectbox",
+    data: {
+        select: "Vue"
+    }
+})

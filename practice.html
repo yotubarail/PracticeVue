@@ -31,6 +31,7 @@
         <div id="app3">
             <h1>条件分岐</h1>
             <p v-if="seen">falseにすると消えるよ</p>
+            <p v-else>こんにちは</p>
         </div>
 
         <div id="app4">
@@ -56,6 +57,11 @@
             <p>{{change_sentence}}</p>
             <input v-model="sentence">
             <button v-on:click="change">文を変更</button>
+        </div>
+
+        <div id="vue_style">
+            <h1>Vue.jsでSyleを指定</h1>
+            <p v-bind:style="style">こんにちは、世界</p>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script src="practice.js"></script>

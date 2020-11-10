@@ -77,3 +77,17 @@ var selectbox = new Vue ({
         select: "Vue"
     }
 })
+
+var checkbox = new Vue ({
+    el: "#checkbox",
+    data: {
+        food: { sushi: true, tenpura: false}
+    }
+})
+
+var checkbox2 = new Vue ({
+    el: "#checkbox2",
+    data: {
+        expressions: ["☺️"]
+    }
+})

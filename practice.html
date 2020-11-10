@@ -102,8 +102,8 @@
                 <tbody>
                     <tr>
                         <td>
-                            <p><input type="checkbox" v-model="food.sushi">寿司</p>
-                            <p><input type="checkbox" v-model="food.tenpura">天ぷら</p>
+                            <label><input type="checkbox" v-model="food.sushi">寿司</label>
+                            <label><input type="checkbox" v-model="food.tenpura">天ぷら</label>
                         </td>
                         <td>
                             <p>{{ food }}</p>
@@ -125,8 +125,8 @@
                 <tbody>
                     <tr>
                         <td>
-                            <p><input type="checkbox" value="☺️" v-model="expressions">笑い</p>
-                            <p><input type="checkbox" value="😭" v-model="expressions">泣き</p>
+                            <label><input type="checkbox" value="☺️" v-model="expressions">笑い</label>
+                            <label><input type="checkbox" value="😭" v-model="expressions">泣き</label>
                         </td>
                         <td>
                             <p v-for="expression in expressions">{{ expression }}</p>

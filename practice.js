@@ -91,3 +91,10 @@ var checkbox2 = new Vue ({
         expressions: ["☺️"]
     }
 })
+
+var radio = new Vue ({
+    el: "#radio",
+    data: {
+        vehicles: ""
+    }
+})

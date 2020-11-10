@@ -136,6 +136,29 @@
             </table>
         </div>
 
+        <div id="radio">
+            <h1>ラジオボタン</h1>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>選択</th>
+                        <th>結果</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label><input type="radio" value="car" v-model="vehicles">自動車</label>
+                            <label><input type="radio" value="airplane" v-model="vehicles">飛行機</label>
+                        </td>
+                        <td>
+                            <p>{{ vehicles }}</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script src="practice.js"></script>
     </main>

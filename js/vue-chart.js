@@ -12,7 +12,14 @@ Vue.component('line-chart', {
       }]
      }, {
       responsive: true,
-      maintainAspectRatio: false
+      maintainAspectRatio: false,
+       scales: {
+           yAxes: [{
+               ticks: {
+                   beginAtZero: true
+               }
+           }]
+       }
      })
     }
 })
@@ -29,7 +36,19 @@ Vue.component("bar-chart", {
             }]
         }, {
             responsive: true,
-            maintainAspectRatio: false
+            maintainAspectRatio: false,
+            scales: {
+                yAxes: [{
+                    display: true,
+                    scaleLabel: {
+                        display: true,
+                        labelString: "気温（％）"
+                    },
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
         })
     }
 })

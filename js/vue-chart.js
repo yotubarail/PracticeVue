@@ -13,12 +13,12 @@ Vue.component('line-chart', {
      }, {
       responsive: true,
       maintainAspectRatio: false,
-       scales: {
-           yAxes: [{
-               ticks: {
-                   beginAtZero: true
-               }
-           }]
+    　scales: {
+         yAxes: [{
+              ticks: {
+                  beginAtZero: true
+              }
+         }]
        }
      })
     }
@@ -53,7 +53,7 @@ Vue.component("bar-chart", {
     }
 })
 
-Vue.component("pie", {
+Vue.component("pie-chart", {
     extends: VueChartJs.Pie,
     mounted() {
         this.renderChart({
@@ -67,6 +67,29 @@ Vue.component("pie", {
         {
             responsive: true,
             maintainAspectRatio: false
+        })
+    }
+})
+
+Vue.component("radar-chart", {
+    extends: VueChartJs.Radar,
+    mounted() {
+        this.renderChart({
+            labels: ["HP", "攻撃", "防御", "MP"],
+            datasets: [{
+                label: "Rader",
+                data: [100, 45, 50, 60],
+                backgroundColor: "yellow"
+            }]
+        },
+        {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                ticks: {
+                    beginAtZero: true
+                }
+            }
         })
     }
 })

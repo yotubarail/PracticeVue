@@ -42,7 +42,7 @@ Vue.component("bar-chart", {
                     display: true,
                     scaleLabel: {
                         display: true,
-                        labelString: "気温（％）"
+                        labelString: "気温（℃）"
                     },
                     ticks: {
                         beginAtZero: true

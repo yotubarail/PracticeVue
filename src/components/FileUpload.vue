@@ -4,7 +4,7 @@
         ファイルアップロード
         <input type="file" ref="file" @change="setImage">
     </label>
-    <img :src="data.image" alt="">
+    <img :src="data.image" alt="アップロードする画像">
     <p>{{ data.name }}</p>
   </div>
 </template>

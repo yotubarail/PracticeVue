@@ -1,6 +1,9 @@
 <template>
   <div>
+    <h1>Vue-cli</h1>
+    <h2>画像アップロード</h2>
     <FileUpload/>
+    <h2>Chart.js</h2>
     <Chart/>
   </div>
 </template>

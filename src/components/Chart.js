@@ -31,6 +31,10 @@ export default {
                         beginAtZero: true
                     }
                 }]
+            },
+            animation: {
+                duration: 5000,
+                easing: "easeInOutBounce"
             }
         })
     }

@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>$emitでデータ受け渡し</h1>
-        <input type="text" v-model="text">
+        <input type="text" v-model="text" placeholder="入力">
         <button @click="click">送信</button>
     </div>
 </template>
@@ -10,7 +10,7 @@
 export default {
     data() {
         return {
-            text: "hoge"
+            text: ""
         }
     },
     methods: {

@@ -1,8 +1,10 @@
 import { Bar, Line } from 'vue-chartjs'
+import chartjsPluginAnnotation from 'chartjs-plugin-annotation'
 
 export default {
     extends: Bar,
     mounted() {
+        this.addPlugin(chartjsPluginAnnotation),
         this.renderChart({
             labels: ["4日", "5日", "6日", "7日", "8日", "9日", "10日", "11日"],
             datasets: [{
@@ -35,7 +37,18 @@ export default {
             animation: {
                 duration: 5000,
                 easing: "easeInOutBounce"
-            }
+            },
+            annotation: { 
+                annotations: [{ 
+                 type: 'line', 
+                 id: 'hLine', 
+                 mode: 'horizontal', 
+                 scaleID: 'y-axis-0', 
+                 value: 12,
+                 borderWidth: 2, 
+                 borderColor: 'black' 
+                }] 
+            },
         })
     }
 }

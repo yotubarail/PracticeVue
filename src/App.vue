@@ -9,6 +9,7 @@
     <div id="databind-result">
       <p>{{ text }}</p>
     </div>
+    <ChartBox/>
   </div>
 </template>
 
@@ -16,12 +17,14 @@
 import FileUpload from "@/components/FileUpload"
 import Chart from "@/components/Chart.js"
 import DataBind from "@/components/DataBind"
+import ChartBox from "../src/components/ChartBox.vue"
 
   export default {
     components: {
       FileUpload,
       Chart,
-      DataBind
+      DataBind,
+      ChartBox
     },
     data() {
       return {

@@ -10,8 +10,12 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "@popperjs/core": "^2.6.0",
+    "bootstrap": "^4.5.0",
     "chart.js": "^2.9.3",
     "chartjs-plugin-annotation": "^0.5.7",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
     "vue": "^2.5.2",
     "vue-chartjs": "^3.5.1"
   },

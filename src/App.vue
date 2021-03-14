@@ -11,6 +11,7 @@
     </div>
     <ChartBox class="mb-5"/>
     <TabTable/>
+    <VforTable/>
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import Chart from "@/components/Chart.js"
 import DataBind from "@/components/DataBind"
 import ChartBox from "../src/components/ChartBox.vue"
 import TabTable from "./components/TabTable.vue"
+import　VforTable from "./components/VforTable.vue"
 
   export default {
     components: {
@@ -27,7 +29,8 @@ import TabTable from "./components/TabTable.vue"
       Chart,
       DataBind,
       ChartBox,
-      TabTable
+      TabTable,
+      VforTable
     },
     data() {
       return {

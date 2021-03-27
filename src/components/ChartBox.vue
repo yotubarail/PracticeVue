@@ -13,8 +13,8 @@
     chartItems: {
         labels: ["12月", "1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月"],
         datasets: [{
-          label: "月ごとの数",
-          data: [9500, 12000, 19000, 15000, 9500, 5000, 10000, 14000, 9500, 8000, 4500, 7000],
+          label: "月ごとの点数",
+          data: [95, 70, 80, 65, 69, 80, 100, 100, 72, 81, 45, 70],
           backgroundColor: 'lightblue'
         }]
       },
@@ -22,10 +22,6 @@
       // Chart用表示オプション
       chartOptions: {
         maintainAspectRatio: false,
-        // 凡例非表示
-        legend: {
-          display: false
-        },
         scales: {
           xAxes: [{
             display: true,
@@ -54,7 +50,7 @@
            id: 'hLine', 
            mode: 'horizontal', 
            scaleID: 'y-axis-0', 
-           value: 9000,
+           value: 70,
            borderWidth: 10, 
            borderColor: 'red' 
           }] 
